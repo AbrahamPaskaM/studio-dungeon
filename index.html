@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Dungeon — Personal Training by Fachrudi</title>
+  <meta name="description"
+    content="Studio Dungeon — Honest, accessible personal training in Surabaya. Improve your body composition and overall health with certified trainer Fachrudi." />
+  <meta name="keywords"
+    content="personal trainer, Surabaya, Studio Dungeon, Fachrudi, body composition, diet program, fitness" />
+  <meta name="author" content="Fachrudi (@fachrudimz)" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Studio Dungeon — Personal Training by Fachrudi" />
+  <meta property="og:description"
+    content="Didn't want to gatekeep. Honest, accessible fitness knowledge shared openly." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Exactly three loaded families (Display Blackletter, Bold Condensed Sans, Body Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=UnifrakturCook:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+     NAVBAR
+     ═══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-brand">Studio <span>Dungeon</span></a>
+
+      <!-- Desktop nav -->
+      <ul class="nav-links">
+        <li><a href="#about" data-id="Tentang" data-en="About">Tentang</a></li>
+        <li><a href="#services" data-id="Layanan" data-en="Services">Layanan</a></li>
+        <li><a href="#pricing" data-id="Harga" data-en="Pricing">Harga</a></li>
+        <li><a href="#location" data-id="Lokasi" data-en="Location">Lokasi</a></li>
+        <li><a href="#testimonials" data-id="Testimoni" data-en="Reviews">Testimoni</a></li>
+        <li><a href="#gallery" data-id="Galeri" data-en="Gallery">Galeri</a></li>
+        <li><a href="#faq" data-id="FAQ" data-en="FAQ">FAQ</a></li>
+        <li><a href="#contact" data-id="Kontak" data-en="Contact">Kontak</a></li>
+        <li>
+          <div class="lang-toggle">
+            <button class="lang-btn active" data-lang="id">ID</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Mobile controls -->
+      <div class="nav-mobile-controls">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="id">ID</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="nav-mobile">
+    <a href="#about" data-id="Tentang" data-en="About">Tentang</a>
+    <a href="#services" data-id="Layanan" data-en="Services">Layanan</a>
+    <a href="#pricing" data-id="Harga" data-en="Pricing">Harga</a>
+    <a href="#location" data-id="Lokasi" data-en="Location">Lokasi</a>
+    <a href="#testimonials" data-id="Testimoni" data-en="Reviews">Testimoni</a>
+    <a href="#gallery" data-id="Galeri" data-en="Gallery">Galeri</a>
+    <a href="#faq" data-id="FAQ" data-en="FAQ">FAQ</a>
+    <a href="#contact" data-id="Kontak" data-en="Contact">Kontak</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="container hero-container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <!-- City is a single editable variable in script.js (SITE_CONFIG.city) -->
+          <div class="hero-badge-top">
+            <span data-id="FITNESS UNDERGROUND" data-en="UNDERGROUND FITNESS">FITNESS UNDERGROUND</span> <span
+              class="site-city">SURABAYA</span>
+          </div>
+
+          <h1 class="hero-brand">Studio<br /><span class="red">Dungeon</span></h1>
+
+          <p class="hero-tagline" data-id="Nggak mau gatekeep." data-en="Didn't want to gatekeep.">
+            Nggak mau gatekeep.
+          </p>
+
+          <p class="hero-pitch"
+            data-id="Ilmu fitness yang jujur, dibagikan secara terbuka. Yuk ubah komposisi tubuh dan kesehatanmu bareng personal trainer bersertifikat."
+            data-en="Honest fitness knowledge, shared openly. Transform your body composition and overall health with a certified personal trainer.">
+            Ilmu fitness yang jujur, dibagikan secara terbuka. Yuk ubah komposisi tubuh dan kesehatanmu bareng personal
+            trainer bersertifikat.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/6281328602431?text=Halo%20Kak%20Rudi%2C%20saya%20tertarik%20dengan%20program%20di%20Studio%20Dungeon!"
+              class="hero-cta" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              <span data-id="Chat via WhatsApp" data-en="Chat via WhatsApp">Chat via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- DUMMY IMAGE: Hero Side Visual (Swap in /assets/dummy/hero.jpg) -->
+        <div class="hero-visual reveal">
+          <div class="hero-image-frame corner-marked">
+            <img src="assets/dummy/hero.jpg" alt="Dark underground training room at Studio Dungeon"
+              class="dummy-img brutalist-photo" loading="eager" width="700" height="520" />
+            <div class="hero-image-overlay"></div>
+            <div class="hero-visual-caption">
+              <span class="caption-tag">FACHRUDI // HEAD COACH</span>
+              <span class="caption-coord"><span class="site-city">SURABAYA</span> // 7°19'S</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" data-id="scroll ke bawah ↓" data-en="scroll down ↓">
+        scroll ke bawah ↓
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag" data-id="Tentang" data-en="About">Tentang</span>
+        <h2 class="section-title" data-id="Kenalan dulu." data-en="Get to know me.">
+          Kenalan dulu.
+        </h2>
+      </div>
+
+      <!-- Desktop Asymmetric Two-Column Layout -->
+      <div class="about-grid">
+        <!-- DUMMY IMAGE: Trainer Portrait (Swap in /assets/dummy/about.jpg) -->
+        <div class="about-portrait-wrap reveal">
+          <div class="about-portrait-frame corner-marked">
+            <img src="assets/dummy/about.jpg" alt="Fachrudi - Certified Personal Trainer"
+              class="dummy-img brutalist-photo" loading="lazy" width="500" height="640" />
+            <div class="portrait-caption">
+              <span class="caption-tag">FACHRUDI // CPT</span>
+              <span class="caption-exp" data-id="3 TAHUN COACHING" data-en="3 YEARS COACHING">3 TAHUN COACHING</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <div class="about-text reveal">
+            <p data-id="Hai, gue Fachrudi — certified personal trainer dengan pengalaman 3 tahun bantu banyak orang dari berbagai usia dan level kebugaran."
+              data-en="Hey, I'm Fachrudi — a certified personal trainer with 3 years of experience helping people of all ages and fitness levels.">
+              Hai, gue Fachrudi — certified personal trainer dengan pengalaman 3 tahun bantu banyak orang dari berbagai
+              usia dan level kebugaran.
+            </p>
+            <p data-id="Gue mulai Studio Dungeon karena satu hal: nggak mau gatekeep. Ilmu fitness itu harusnya accessible buat semua orang, bukan cuma buat yang udah jago atau punya duit lebih. Gue di sini buat nemenin lu, dari awal banget sekalipun."
+              data-en="I started Studio Dungeon for one reason: I didn't want to gatekeep. Fitness knowledge should be accessible to everyone, not just the advanced or privileged. I'm here to walk with you, even from the very beginning.">
+              Gue mulai Studio Dungeon karena satu hal: nggak mau gatekeep. Ilmu fitness itu harusnya accessible buat
+              semua orang, bukan cuma buat yang udah jago atau punya duit lebih. Gue di sini buat nemenin lu, dari awal
+              banget sekalipun.
+            </p>
+            <p data-id="Fokus gue: bantu lu improve body composition & overall health. Bukan sekadar turun berat badan, tapi bener-bener paham cara tubuh lu bekerja."
+              data-en="My focus: helping you improve your body composition & overall health. Not just losing weight, but truly understanding how your body works.">
+              Fokus gue: bantu lu improve body composition & overall health. Bukan sekadar turun berat badan, tapi
+              bener-bener paham cara tubuh lu bekerja.
+            </p>
+          </div>
+
+          <!-- Oversized numbers stats (Stacks cleanly on mobile) -->
+          <div class="about-stats reveal">
+            <div class="stat-card corner-marked">
+              <div class="stat-number">3+</div>
+              <div class="stat-label" data-id="Tahun Pengalaman" data-en="Years Experience">Tahun Pengalaman</div>
+            </div>
+            <div class="stat-card corner-marked">
+              <div class="stat-number stat-accent">
+                <svg class="stat-svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" aria-label="Certified">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              </div>
+              <div class="stat-label" data-id="Sertifikasi Resmi" data-en="Certified Trainer">Sertifikasi Resmi</div>
+            </div>
+            <div class="stat-card corner-marked">
+              <div class="stat-number">
+                <svg class="stat-svg" viewBox="0 0 24 24" width="50" height="50" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" aria-label="All Levels">
+                  <path
+                    d="M18.178 8c5.096 0 5.096 8 0 8-2.616 0-4.48-2.584-6.178-4-1.698 1.416-3.562 4-6.178 4-5.096 0-5.096-8 0-8 2.616 0 4.48 2.584 6.178 4 1.698-1.416 3.562-4 6.178-4z" />
+                </svg>
+              </div>
+              <div class="stat-label" data-id="Semua Level" data-en="All Levels">Semua Level</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════════════ -->
+  <section id="services">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag" data-id="Layanan" data-en="Services">Layanan</span>
+        <h2 class="section-title" data-id="Apa yang bisa gue bantu." data-en="What I can help with.">
+          Apa yang bisa gue bantu.
+        </h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card corner-marked reveal">
+          <div class="card-icon-wrap">
+            <!-- Brutalist Lucide Dumbbell Icon (No color emoji) -->
+            <svg class="card-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+              <path d="M6 4v16M18 4v16M2 8v8M22 8v8M6 12h12" />
+            </svg>
+          </div>
+          <h3>Personal Training</h3>
+          <p data-id="Latihan one-on-one yang disesuaikan sama tujuan dan kemampuan tubuh lu. Gue pantau form, progress, dan pastiin lu latihan dengan aman dan efektif. Cocok buat pemula sampai yang udah berpengalaman."
+            data-en="One-on-one training tailored to your goals and body. I monitor your form, track your progress, and make sure you train safely and effectively. Suitable for beginners to advanced.">
+            Latihan one-on-one yang disesuaikan sama tujuan dan kemampuan tubuh lu. Gue pantau form, progress, dan
+            pastiin lu latihan dengan aman dan efektif. Cocok buat pemula sampai yang udah berpengalaman.
+          </p>
+          <span class="service-tag" data-id="Tersedia" data-en="Available">Tersedia</span>
+        </div>
+
+        <div class="service-card corner-marked reveal">
+          <div class="card-icon-wrap">
+            <!-- Brutalist Lucide Nutrition/Apple Icon (No color emoji) -->
+            <svg class="card-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+              <path
+                d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z" />
+              <path d="M10 2c1 .5 2 2 2 5" />
+            </svg>
+          </div>
+          <h3>Diet Program</h3>
+          <p data-id="Pola makan yang dirancang spesifik buat lu — bukan diet asal-asalan. Gue bantu susun plan yang sustainable, enak, dan sesuai lifestyle lu. Karena nutrition itu 80% dari hasil lu."
+            data-en="A nutrition plan designed specifically for you — not just random diets. I help create a sustainable, enjoyable plan that fits your lifestyle. Because nutrition is 80% of your results.">
+            Pola makan yang dirancang spesifik buat lu — bukan diet asal-asalan. Gue bantu susun plan yang sustainable,
+            enak, dan sesuai lifestyle lu. Karena nutrition itu 80% dari hasil lu.
+          </p>
+          <span class="service-tag" data-id="Tersedia" data-en="Available">Tersedia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     WHO IT'S FOR
+     ═══════════════════════════════════════════════ -->
+  <section id="audience">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag" data-id="Untuk Siapa" data-en="Who It's For">Untuk Siapa</span>
+        <h2 class="section-title" data-id="Buat semua orang." data-en="For everyone.">
+          Buat semua orang.
+        </h2>
+        <p class="section-subtitle"
+          data-id="Studio Dungeon terbuka buat siapa aja yang mau mulai peduli sama tubuh dan kesehatannya."
+          data-en="Studio Dungeon is open to anyone who wants to start caring for their body and health.">
+          Studio Dungeon terbuka buat siapa aja yang mau mulai peduli sama tubuh dan kesehatannya.
+        </p>
+      </div>
+
+      <div class="audience-grid">
+        <!-- Card 1: Users Icon -->
+        <div class="audience-card corner-marked reveal">
+          <div class="card-icon-wrap">
+            <svg class="card-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h4 data-id="Semua Gender" data-en="All Genders">Semua Gender</h4>
+          <p data-id="Pria, wanita, siapa aja." data-en="Men, women, everyone.">Pria, wanita, siapa aja.</p>
+        </div>
+
+        <!-- Card 2: Clock/Ages Icon -->
+        <div class="audience-card corner-marked reveal">
+          <div class="card-icon-wrap">
+            <svg class="card-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h4 data-id="Semua Usia" data-en="All Ages">Semua Usia</h4>
+          <p data-id="Remaja hingga dewasa." data-en="Teens to adults.">Remaja hingga dewasa.</p>
+        </div>
+
+        <!-- Card 3: Sprout/Beginner Icon -->
+        <div class="audience-card corner-marked reveal">
+          <div class="card-icon-wrap">
+            <svg class="card-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+              <path d="M7 20h10" />
+              <path d="M10 20c5.5-2.5.8-6.4 3-10" />
+              <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4.1 5.5.8z" />
+              <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" />
+            </svg>
+          </div>
+          <h4 data-id="Pemula" data-en="Beginners">Pemula</h4>
+          <p data-id="Belum pernah gym? No worries." data-en="Never been to a gym? No worries.">Belum pernah gym? No
+            worries.</p>
+        </div>
+
+        <!-- Card 4: Zap/Advanced Icon -->
+        <div class="audience-card corner-marked reveal">
+          <div class="card-icon-wrap">
+            <svg class="card-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+          </div>
+          <h4 data-id="Berpengalaman" data-en="Advanced">Berpengalaman</h4>
+          <p data-id="Mau naik level? Let's go." data-en="Ready to level up? Let's go.">Mau naik level? Let's go.</p>
+        </div>
+      </div>
+
+      <!-- Audience Note with Lucide Alert SVG Icon (No color emoji) -->
+      <div class="audience-note corner-marked reveal">
+        <div class="note-header">
+          <svg class="note-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+            <line x1="12" y1="9" x2="12" y2="13" />
+            <line x1="12" y1="17" x2="12.01" y2="17" />
+          </svg>
+          <span class="note-badge" data-id="CATATAN PROGRAM" data-en="PROGRAM NOTE">CATATAN PROGRAM</span>
+        </div>
+        <p data-id="Studio Dungeon saat ini belum menyediakan program khusus untuk persiapan kontes body contest atau atletik kompetitif. Fokus kita adalah kesehatan dan kebugaran umum."
+          data-en="Studio Dungeon currently does not offer specialized programs for body contest prep or competitive athletics. Our focus is general health and fitness.">
+          Studio Dungeon saat ini belum menyediakan program khusus untuk persiapan kontes body contest atau atletik
+          kompetitif. Fokus kita adalah kesehatan dan kebugaran umum.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     PRICING
+     ═══════════════════════════════════════════════ -->
+  <section id="pricing">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag" data-id="Harga" data-en="Pricing">Harga</span>
+        <h2 class="section-title" data-id="Investasi buat tubuh lu." data-en="Invest in your body.">
+          Investasi buat tubuh lu.
+        </h2>
+      </div>
+
+      <div class="pricing-card corner-marked reveal">
+        <div class="pricing-price">Rp100.000</div>
+        <div class="pricing-per" data-id="/ sesi latihan" data-en="/ training session">/ sesi latihan</div>
+
+        <!-- Pricing note: Separate clean ID & EN versions (No emoji) -->
+        <div class="pricing-note" data-id="Belum ada paket saat ini. Opsi paket lainnya akan segera hadir."
+          data-en="No packages available yet. Package options coming soon.">
+          Belum ada paket saat ini. Opsi paket lainnya akan segera hadir.
+        </div>
+
+        <a href="https://wa.me/6281328602431?text=Halo%20Kak%20Rudi%2C%20saya%20mau%20tanya%20soal%20harga%20dan%20jadwal%20latihan."
+          class="pricing-cta" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          <span data-id="Tanya Jadwal" data-en="Ask Schedule">Tanya Jadwal</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     LOCATION (Two-column Brutalist Layout)
+     ═══════════════════════════════════════════════ -->
+  <section id="location">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag" data-id="Lokasi" data-en="Location">Lokasi</span>
+        <h2 class="section-title" data-id="Tempat latihan." data-en="Where we train.">
+          Tempat latihan.
+        </h2>
+      </div>
+
+      <!-- Desktop Two-Column Layout -->
+      <div class="location-cards">
+        <!-- DUMMY IMAGE: Srikandi Gym Jambangan (Swap in /assets/dummy/location-srikandi.jpg) -->
+        <div class="location-card corner-marked reveal">
+          <div class="location-img-wrap">
+            <img src="assets/dummy/location-srikandi.jpg" alt="Srikandi Gym Jambangan interior and equipment"
+              class="dummy-img brutalist-photo" loading="lazy" width="600" height="380" />
+            <span class="location-badge" data-id="GYM UTAMA" data-en="MAIN GYM">GYM UTAMA</span>
+          </div>
+          <div class="location-body">
+            <div class="loc-header">
+              <!-- Lucide Building-2 SVG Icon (No color emoji) -->
+              <svg class="loc-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+                <path d="M10 6h4M10 10h4M10 14h4M10 18h4" />
+              </svg>
+              <h4>Srikandi Gym Jambangan</h4>
+            </div>
+            <p data-id="Gym utama tempat gue biasa latihan bareng client. Lengkap dan nyaman."
+              data-en="My main gym where I usually train with clients. Fully equipped and comfortable.">
+              Gym utama tempat gue biasa latihan bareng client. Lengkap dan nyaman.
+            </p>
+            <div class="loc-tags">
+              <span class="loc-tag"><span class="site-city">Surabaya</span> Selatan</span>
+              <span class="loc-tag" data-id="Full Iron & Racks" data-en="Full Iron & Racks">Full Iron & Racks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DUMMY IMAGE: Home Visit (Swap in /assets/dummy/location-homevisit.jpg) -->
+        <div class="location-card corner-marked reveal">
+          <div class="location-img-wrap">
+            <img src="assets/dummy/location-homevisit.jpg" alt="Home visit personal training session"
+              class="dummy-img brutalist-photo" loading="lazy" width="600" height="380" />
+            <span class="location-badge" data-id="KUNJUNGAN PRIVAT" data-en="HOME VISIT">KUNJUNGAN PRIVAT</span>
+          </div>
+          <div class="location-body">
+            <div class="loc-header">
+              <!-- Lucide Home SVG Icon (No color emoji) -->
+              <svg class="loc-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+              <h4 data-id="Home Visit" data-en="Home Visit">Home Visit</h4>
+            </div>
+            <p data-id="Nggak bisa ke gym? Gue yang dateng ke tempat lu. Latihan tetap bisa jalan."
+              data-en="Can't make it to the gym? I'll come to you. Training doesn't stop.">
+              Nggak bisa ke gym? Gue yang dateng ke tempat lu. Latihan tetap bisa jalan.
+            </p>
+            <div class="loc-tags">
+              <span class="loc-tag">Area <span class="site-city">Surabaya</span></span>
+              <span class="loc-tag" data-id="Peralatan Dibawa" data-en="Equipment Provided">Peralatan Dibawa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     TESTIMONIALS (3 Cards with Visible DUMMY tag)
+     ═══════════════════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag" data-id="Testimoni" data-en="Testimonials">Testimoni</span>
+        <h2 class="section-title" data-id="Kata mereka." data-en="What they say.">
+          Kata mereka.
+        </h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- TODO: REPLACE DUMMY TESTIMONIAL BEFORE LAUNCH - Card 1 -->
+        <div class="testimonial-card corner-marked reveal">
+          <div class="testimonial-dummy-badge">DUMMY TESTIMONIAL</div>
+          <div class="testimonial-header">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/dummy/testimonial-1.jpg" alt="Client 1 Dummy avatar" class="dummy-img testimonial-avatar"
+                loading="lazy" width="60" height="60" />
+            </div>
+            <div class="testimonial-meta">
+              <div class="client-name">Rian P. <span class="dummy-pill">DUMMY</span></div>
+              <div class="client-program" data-id="Fat Loss & Postur" data-en="Fat Loss & Posture">Fat Loss & Postur
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-quote"
+            data-id="“Form deadlift dan squat gue dibenerin total dari nol. Nggak ada lagi sakit pinggang, progres beban naik stabil tiap minggu.”"
+            data-en="“My deadlift and squat form was rebuilt from scratch. Zero back pain now, and strength numbers going up consistently.”">
+            “Form deadlift dan squat gue dibenerin total dari nol. Nggak ada lagi sakit pinggang, progres beban naik
+            stabil tiap minggu.”
+          </p>
+          <!-- Inline Silver SVG Star Rating (No emoji) -->
+          <div class="testimonial-stars" aria-label="5 stars rating">
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- TODO: REPLACE DUMMY TESTIMONIAL BEFORE LAUNCH - Card 2 -->
+        <div class="testimonial-card corner-marked reveal">
+          <div class="testimonial-dummy-badge">DUMMY TESTIMONIAL</div>
+          <div class="testimonial-header">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/dummy/testimonial-2.jpg" alt="Client 2 Dummy avatar" class="dummy-img testimonial-avatar"
+                loading="lazy" width="60" height="60" />
+            </div>
+            <div class="testimonial-meta">
+              <div class="client-name">Sarah M. <span class="dummy-pill">DUMMY</span></div>
+              <div class="client-program" data-id="Body Recomposition" data-en="Body Recomposition">Body Recomposition
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-quote"
+            data-id="“Program makannya realistis banget, nggak bikin tersiksa atau lemes. 3 bulan lingkar pinggang turun drastis dan badan jauh lebih fit.”"
+            data-en="“The nutrition plan is super realistic, never feels restrictive or tiring. In 3 months my waist dropped significantly and I feel much fitter.”">
+            “Program makannya realistis banget, nggak bikin tersiksa atau lemes. 3 bulan lingkar pinggang turun drastis
+            dan badan jauh lebih fit.”
+          </p>
+          <!-- Inline Silver SVG Star Rating (No emoji) -->
+          <div class="testimonial-stars" aria-label="5 stars rating">
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- TODO: REPLACE DUMMY TESTIMONIAL BEFORE LAUNCH - Card 3 -->
+        <div class="testimonial-card corner-marked reveal">
+          <div class="testimonial-dummy-badge">DUMMY TESTIMONIAL</div>
+          <div class="testimonial-header">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/dummy/testimonial-3.jpg" alt="Client 3 Dummy avatar" class="dummy-img testimonial-avatar"
+                loading="lazy" width="60" height="60" />
+            </div>
+            <div class="testimonial-meta">
+              <div class="client-name">Dimas K. <span class="dummy-pill">DUMMY</span></div>
+              <div class="client-program" data-id="Pemula / Strength" data-en="Beginner / Strength">Pemula / Strength
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-quote"
+            data-id="“Coach Rudi sabar banget ngajarin pemula yang belum pernah pegang barbel. Atmosfernya underground tapi asik, zero judging.”"
+            data-en="“Coach Rudi is incredibly patient with beginners who never touched a barbell before. Underground vibes but super supportive, zero judging.”">
+            “Coach Rudi sabar banget ngajarin pemula yang belum pernah pegang barbel. Atmosfernya underground tapi asik,
+            zero judging.”
+          </p>
+          <!-- Inline Silver SVG Star Rating (No emoji) -->
+          <div class="testimonial-stars" aria-label="5 stars rating">
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     GALLERY (6 Dummy Photos, Varied Grid)
+     ═══════════════════════════════════════════════ -->
+  <section id="gallery">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag" data-id="Galeri" data-en="Gallery">Galeri</span>
+        <h2 class="section-title" data-id="Behind the dungeon." data-en="Behind the dungeon.">
+          Behind the dungeon.
+        </h2>
+      </div>
+
+      <!-- DUMMY IMAGES: 6 Gallery Photos (Swap in /assets/dummy/gallery-1.jpg to 6.jpg) -->
+      <div class="gallery-grid">
+        <!-- Photo 1: Wide Asymmetric -->
+        <div class="gallery-item gallery-item--wide corner-marked reveal">
+          <img src="assets/dummy/gallery-1.jpg" alt="Heavy barbell deadlift with chalk at Studio Dungeon"
+            class="dummy-img brutalist-photo" loading="lazy" width="800" height="520" />
+          <div class="gallery-overlay">
+            <span class="gallery-code">#01 // HEAVY PULL</span>
+          </div>
+        </div>
+
+        <!-- Photo 2: Standard -->
+        <div class="gallery-item corner-marked reveal">
+          <img src="assets/dummy/gallery-2.jpg" alt="Heavy dumbbell rack in dark dungeon gym"
+            class="dummy-img brutalist-photo" loading="lazy" width="500" height="500" />
+          <div class="gallery-overlay">
+            <span class="gallery-code">#02 // IRON RACK</span>
+          </div>
+        </div>
+
+        <!-- Photo 3: Standard -->
+        <div class="gallery-item corner-marked reveal">
+          <img src="assets/dummy/gallery-3.jpg" alt="Athlete resting and focusing between sets"
+            class="dummy-img brutalist-photo" loading="lazy" width="500" height="500" />
+          <div class="gallery-overlay">
+            <span class="gallery-code">#03 // REST & FOCUS</span>
+          </div>
+        </div>
+
+        <!-- Photo 4: Wide Asymmetric -->
+        <div class="gallery-item gallery-item--wide corner-marked reveal">
+          <img src="assets/dummy/gallery-4.jpg" alt="Heavy Olympic barbell plates and rack"
+            class="dummy-img brutalist-photo" loading="lazy" width="800" height="520" />
+          <div class="gallery-overlay">
+            <span class="gallery-code">#04 // BARBELL PLATES</span>
+          </div>
+        </div>
+
+        <!-- Photo 5: Standard -->
+        <div class="gallery-item corner-marked reveal">
+          <img src="assets/dummy/gallery-5.jpg" alt="Kettlebell conditioning movement session"
+            class="dummy-img brutalist-photo" loading="lazy" width="500" height="500" />
+          <div class="gallery-overlay">
+            <span class="gallery-code">#05 // CONDITIONING</span>
+          </div>
+        </div>
+
+        <!-- Photo 6: Wide Asymmetric -->
+        <div class="gallery-item gallery-item--wide corner-marked reveal">
+          <img src="assets/dummy/gallery-6.jpg" alt="Trainer coaching client form and lifting technique"
+            class="dummy-img brutalist-photo" loading="lazy" width="800" height="520" />
+          <div class="gallery-overlay">
+            <span class="gallery-code">#06 // FORM FIRST</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     BLOG
+     ═══════════════════════════════════════════════ -->
+  <section id="blog">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag">Blog</span>
+        <h2 class="section-title" data-id="Catatan dari dungeon." data-en="Notes from the dungeon.">
+          Catatan dari dungeon.
+        </h2>
+      </div>
+
+      <div class="blog-placeholder corner-marked reveal">
+        <div class="card-icon-wrap" style="justify-content:center;margin-bottom:1rem;">
+          <!-- Lucide File-Text SVG Icon (No color emoji) -->
+          <svg class="blog-icon" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+        </div>
+        <p data-id="Blog segera hadir. Gue bakal share tips, insight, dan cerita soal fitness di sini."
+          data-en="Blog coming soon. I'll be sharing tips, insights, and stories about fitness here.">
+          Blog segera hadir. Gue bakal share tips, insight, dan cerita soal fitness di sini.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════════════ -->
+  <section id="faq">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title" data-id="Yang sering ditanya." data-en="Frequently asked.">
+          Yang sering ditanya.
+        </h2>
+      </div>
+
+      <div class="faq-list">
+
+        <!-- FAQ 1 -->
+        <div class="faq-item corner-marked reveal">
+          <button class="faq-question">
+            <span data-id="Siapa aja yang bisa join?" data-en="Who can join?">Siapa aja yang bisa join?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner"
+              data-id="Semua orang! Pria, wanita, usia berapa aja, dari yang baru pertama kali masuk gym sampai yang udah rutin latihan. Yang penting mau commit sama proses."
+              data-en="Everyone! Men, women, any age, from first-timers to regulars. What matters is your commitment to the process.">
+              Semua orang! Pria, wanita, usia berapa aja, dari yang baru pertama kali masuk gym sampai yang udah rutin
+              latihan. Yang penting mau commit sama proses.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item corner-marked reveal">
+          <button class="faq-question">
+            <span data-id="Latihan di mana?" data-en="Where do we train?">Latihan di mana?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner"
+              data-id="Di Srikandi Gym Jambangan (Surabaya). Kalau lu nggak bisa ke gym, gue juga bisa home visit — gue yang dateng ke tempat lu."
+              data-en="At Srikandi Gym Jambangan (Surabaya). If you can't come to the gym, I also do home visits — I'll come to you.">
+              Di Srikandi Gym Jambangan (Surabaya). Kalau lu nggak bisa ke gym, gue juga bisa home visit — gue yang
+              dateng ke tempat lu.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item corner-marked reveal">
+          <button class="faq-question">
+            <span data-id="Berapa biayanya?" data-en="How much does it cost?">Berapa biayanya?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner"
+              data-id="Rp100.000 per sesi latihan. Belum ada paket saat ini, tapi more options coming soon. Chat gue aja buat info lebih lanjut!"
+              data-en="Rp100,000 per training session. No packages available yet, but more options are coming soon. Just chat me for more info!">
+              Rp100.000 per sesi latihan. Belum ada paket saat ini, tapi more options coming soon. Chat gue aja buat
+              info lebih lanjut!
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item corner-marked reveal">
+          <button class="faq-question">
+            <span data-id="Perlu bawa apa?" data-en="What should I bring?">Perlu bawa apa?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner"
+              data-id="Bawa baju ganti, handuk, botol minum, dan semangat aja. Kalau baru pertama kali, nggak perlu beli peralatan khusus — semua ada di gym."
+              data-en="Bring a change of clothes, towel, water bottle, and your motivation. If it's your first time, no need to buy special equipment — everything's at the gym.">
+              Bawa baju ganti, handuk, botol minum, dan semangat aja. Kalau baru pertama kali, nggak perlu beli
+              peralatan khusus — semua ada di gym.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item corner-marked reveal">
+          <button class="faq-question">
+            <span data-id="Diet program-nya kayak gimana?" data-en="How does the diet program work?">Diet program-nya
+              kayak gimana?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner"
+              data-id="Gue susunin plan makan yang disesuaikan sama kebutuhan kalori, tujuan, dan gaya hidup lu. Bukan diet ekstrem — tapi pola makan yang bisa lu jalanin jangka panjang. Konsultasi dulu via WhatsApp, nanti kita bahas bareng."
+              data-en="I create a meal plan tailored to your calorie needs, goals, and lifestyle. No extreme diets — just a sustainable eating plan you can maintain long-term. Let's discuss via WhatsApp first.">
+              Gue susunin plan makan yang disesuaikan sama kebutuhan kalori, tujuan, dan gaya hidup lu. Bukan diet
+              ekstrem — tapi pola makan yang bisa lu jalanin jangka panjang. Konsultasi dulu via WhatsApp, nanti kita
+              bahas bareng.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item corner-marked reveal">
+          <button class="faq-question">
+            <span data-id="Gimana cara mulainya?" data-en="How do I get started?">Gimana cara mulainya?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner"
+              data-id="Gampang! Chat gue aja via WhatsApp. Kita ngobrol dulu soal tujuan lu, terus kita atur jadwal. No pressure, no commitment sampai lu yakin."
+              data-en="Easy! Just chat me on WhatsApp. We'll talk about your goals first, then set a schedule. No pressure, no commitment until you're sure.">
+              Gampang! Chat gue aja via WhatsApp. Kita ngobrol dulu soal tujuan lu, terus kita atur jadwal. No pressure,
+              no commitment sampai lu yakin.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gothic section divider with cross/dagger motif -->
+  <div class="gothic-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="gothic-glyph">† ✠ †</span>
+    <span class="divider-line"></span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+     CONTACT + FOOTER
+     ═══════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-rule" aria-hidden="true"></div>
+        <span class="section-tag" data-id="Kontak" data-en="Contact">Kontak</span>
+        <h2 class="section-title" data-id="Mulai sekarang." data-en="Start now.">
+          Mulai sekarang.
+        </h2>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-cta-block corner-marked reveal">
+          <h3 data-id="Chat dulu, gratis." data-en="Chat first, it's free.">Chat dulu, gratis.</h3>
+          <p data-id="Nggak perlu langsung daftar. Chat gue dulu aja via WhatsApp, cerita tujuan lu, dan kita bisa diskusi kapan bisa mulai."
+            data-en="No need to sign up right away. Just chat me on WhatsApp, tell me your goals, and we can discuss when to start.">
+            Nggak perlu langsung daftar. Chat gue dulu aja via WhatsApp, cerita tujuan lu, dan kita bisa diskusi kapan
+            bisa mulai.
+          </p>
+
+          <a href="https://wa.me/6281328602431?text=Halo%20Kak%20Rudi%2C%20saya%20tertarik%20dengan%20program%20di%20Studio%20Dungeon!"
+            class="pricing-cta contact-wa-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span data-id="Chat via WhatsApp" data-en="Chat via WhatsApp">Chat via WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="reveal">
+          <h4 class="social-heading" data-id="Temukan gue di" data-en="Find me on">
+            Temukan gue di
+          </h4>
+          <div class="social-links" style="flex-direction:column;">
+            <a href="https://instagram.com/fachrudimz" class="social-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+              @fachrudimz
+            </a>
+            <a href="https://tiktok.com/@fachrudimz" class="social-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+              </svg>
+              @fachrudimz
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">Studio <span style="color:var(--red);">Dungeon</span></div>
+          <p class="footer-copy" data-id="© 2024 Studio Dungeon. Nggak mau gatekeep."
+            data-en="© 2024 Studio Dungeon. Didn't want to gatekeep.">
+            © 2024 Studio Dungeon. Nggak mau gatekeep.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+     FLOATING ACTIONS (Opposite sides, no overlap)
+     ═══════════════════════════════════════════════ -->
+
+  <!-- Restyled WhatsApp button: black/charcoal bg, thick silver border, white icon, offset shadow, red on hover -->
+  <a href="https://wa.me/6281328602431?text=Halo%20Kak%20Rudi%2C%20saya%20tertarik%20dengan%20program%20di%20Studio%20Dungeon!"
+    class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="#E8E2D6">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <!-- Back to top moved to bottom-left to prevent overlap with WhatsApp button -->
+  <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

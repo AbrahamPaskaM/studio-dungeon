@@ -6,7 +6,7 @@
 /* ───────────────────── EDITABLE SITE CONFIGURATION ───────────────────── */
 // Change this single constant to update the city location across the entire site
 const SITE_CONFIG = {
-  city: 'Surabaya'
+  city: 'Suroboyo, Jambangan Sragen'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
